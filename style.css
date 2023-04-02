@@ -35,4 +35,26 @@ textarea{
 
     /* အချုံ့အချဲ့လုပ်မရအောင် */
     resize: none;
+    overflow-y: scroll;
+}
+
+.justify-content-end{
+    display: flex;
+    justify-content: end;
+}
+
+.btn{
+    background-color: steelblue;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    margin: 0 0 10px; /*top right bottom left*/
+}
+
+.email-item{
+    background-color: steelblue;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 15px;
+    margin: 0 5px;
 }
