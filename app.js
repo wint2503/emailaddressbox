@@ -49,5 +49,23 @@ getbtn.addEventListener('click',function(e){
 })
 
 function sendemail(){
-    console.log('i am working');
+    // console.log('i am working');
+    const gettxtvalue = gettextarea.value;
+    const getaddresses = document.querySelectorAll('.email-item');
+    // console.log(getaddresses);
+
+    var persons = [];
+    if(getaddresses.length > 0 && gettxtvalue){
+        getaddresses.forEach(function(getaddress){
+            persons.push({
+                email:getaddress.textContent,
+                massage:gettxtvalue
+            })
+        })
+        console.log(persons);
+    }else{
+        window.alert('Enter Massage');
+        gettextarea.focus();
+    }
+
 }
